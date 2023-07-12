@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #007bff;
+}
+
+.input-box {
+    position: relative;
+    width: 80vw;
+    max-width: 40em;
+    height: 200px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.input-box textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    caret-color: #007bff;
+}
+.input-box.active textarea,
+.input-box.active textarea:focus {
+    border-color: #007bff;
+}
+
+.input-box.active .charcters {
+    color: #007bff;
+    display: block;
+}
+.input-box.error textarea,
+.input-box.error textarea:focus {
+    border-color: red;
+}
+
+.input-box.error .charcters {
+    color: red;
+}
+
+.input-box textarea:focus,
+.input-box textarea:valid {
+    border-color: #b4b3b3;
+}
+
+.input-box textarea::placeholder {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.input-box .title {
+    position: absolute;
+    top: 2rem;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    left: 3rem;
+    color: #007bff;
+    font-size: 1.3rem;
+}
+
+.charcters {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+.heading{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}

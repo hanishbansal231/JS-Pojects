@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#78C1F3 0, #78C1F3 50%, #fff 50%, #fff 0);
+    line-height: 1.1;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: #0000;
+    transition: .5s ease-in-out;
+    /* overflow: hidden; */
+    z-index: 1;
+}
+.imgBox{
+    position: relative;
+    max-width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.imgBox img{
+    max-width: 230px;
+    transition: all .5s ease-in-out;
+}
+.card:hover .imgBox img{
+    transform: rotate(-35deg) translateX(-20px);
+}
+.detailSection{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 380px;
+    background: #78C1F3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all .5s ease-in-out;
+    padding: 4rem 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.detailSection .heading {
+    font-size: 2.5rem;
+}
+.detailSection .heading span{
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.subHeading{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.paraProduct{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 300;
+}
+.sizes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.sizes div{
+    border: 2px solid #fff;
+    padding: 1rem;
+}
+.priceBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.priceHeading{
+    font-size: 3rem;
+}
+.btn{
+    display: inline-block;
+    background: #fff;
+    color: #78C1F3;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+.card:hover{
+    width: 600px;
+} 
+ .card:hover .detailSection{
+    left: 300px;
+}
+
+@media (max-width: 40em) {
+    .card{
+        width: 250px;
+        height: 330px;
+    }
+    .imgBox{
+        max-width: 250px;
+    }
+    .card .detailSection{
+        width: 250px;
+        height: 330px;
+        gap: 1.8rem;
+    }
+    .imgBox img{
+        max-width: 180px;
+    }
+    .card:hover{
+        width: 500px;
+    } 
+    .card:hover .detailSection{
+        left: 250px;
+    }
+    .priceHeading{
+        font-size: 2rem;
+    }
+
+    .paraProduct{
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .subHeading{
+        font-size: 1;
+        margin-bottom: .8rem;
+    }
+    .detailSection .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 35em) {
+    .card{
+        width: 200px;
+        height: 280px;
+    }
+    .imgBox{
+        max-width: 200px;
+    }
+    .card .detailSection{
+        width: 200px;
+        height: 280px;
+        padding: 2rem 1rem;
+        gap: 1.8rem;
+    }
+    .imgBox img{
+        max-width: 130px;
+    }
+    .card:hover{
+        width: 400px;
+    } 
+    .card:hover .detailSection{
+        left: 200px;
+    }
+    .priceHeading{
+        font-size: 1.5rem;
+    }
+
+    .paraProduct{
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .subHeading{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .detailSection .heading {
+        font-size: 1.5rem;
+    }
+    .priceBox{
+        margin-top: .5rem;
+    }
+    .priceBox {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .sizes div{
+        border: 1px solid #fff;
+        padding: .5rem;
+    }
+    .sizes{
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: .8rem 1.5rem;
+    }
+    .detailSection .heading span{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 27em) {
+    .card{
+        width: 150px;
+        height: 230px;
+    }
+    .imgBox{
+        max-width: 150px;
+    }
+    .card .detailSection{
+        width: 150px;
+        height: 230px;
+        padding: 2rem 1rem;
+        gap: 1.8rem;
+    }
+    .imgBox img{
+        max-width: 80px;
+    }
+    .card:hover{
+        width: 300px;
+    } 
+    .card:hover .detailSection{
+        left: 150px;
+    }
+    .priceHeading{
+        font-size: 1.3rem;
+    }
+    .paraProduct{
+        font-size: .7rem;
+        line-height: 1.3;
+    }
+    .subHeading{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    .detailSection .heading {
+        font-size: 1.5rem;
+    }
+    .priceBox{
+        margin-top: .5rem;
+    }
+    .priceBox {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .sizes div{
+        border: 1px solid #fff;
+        padding: .5rem;
+    }
+    .sizes{
+        justify-content: center;
+        gap: .5rem;
+        font-size: .7rem;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+    .detailSection .heading span{
+        font-size: 1rem;
+    }
+}
+

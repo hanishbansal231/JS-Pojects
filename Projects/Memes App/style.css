@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #f6e88e;
+}
+::-webkit-scrollbar-track{
+    background: #e9d44e;
+}
+.wrapper {
+    padding: 20px 0;
+    background: #fffbe2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 80vw;
+    width: 30em;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2),
+     4px 4px 11px rgba(0, 0, 0, 0.3),
+      inset 3px 4px 5px rgba(0, 0, 0, 0.4),
+      inset 4px 5px 6px rgba(0, 0, 0, 0.3);
+}
+.card{
+    text-align: center;
+}
+.card .image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card .title{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.card .btn{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #e9d44e;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2),
+    4px 4px 11px rgba(0, 0, 0, 0.3),
+     inset 3px 4px 5px rgba(0, 0, 0, 0.4),
+     inset 4px 5px 6px rgba(0, 0, 0, 0.3);
+}
+.card .btn:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),
+    4px 4px 11px rgba(0, 0, 0, 0.2),
+     inset -3px -4px 5px rgba(0, 0, 0, 0.2),
+     inset -4px -5px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px){
+    .card .title{
+        font-size: 1.4rem;
+    }
+    .card .btn{
+        padding: 1rem 2rem;
+    }
+}

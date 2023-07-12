@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90vw;
+    max-width: 40em;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Box {}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #dc143c;
+    font-size: 1.1rem;
+    padding: .3rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #dc143c;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #dc143c;
+    scale: 1;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 8px #dc143c;
+    scale: 1.1;
+}
+
+.contant {
+    margin: 30px 0;
+}
+
+.meaningBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speaker {
+    color: #dc143c;
+    font-size: 1.6rem;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+span {
+    color: #555;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
+.definition {
+    padding: 1rem 0;
+}
+
+.example {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.example::before {
+    content: ' ';
+    position: absolute;
+    left: -10px;
+    height: 100%;
+    width: 3px;
+    background: #dc143c;
+}
+
+p {
+    font-size: 1.3rem;
+}

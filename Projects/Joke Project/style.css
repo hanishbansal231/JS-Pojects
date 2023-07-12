@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+.container{
+    width: 80vw;
+    max-width: 40em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0,0,0 ,0.4),
+    inset 4px 4px 10px rgba(0,0,0 ,0.1);
+}
+.jokeData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+}
+.jokeData .smile{
+    font-size: 6rem;
+}
+.jokeData .joke{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: red;
+    height: 50px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+}
+.jokeData .joke.fade{
+    opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+    .btn{
+        width: 80%;
+    }
+    .jokeData .joke{
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 450px) {
+    .btn{
+        width: 100%;
+        font-size: .9rem;
+    }
+    .jokeData .joke{
+        font-size: .9rem;
+        line-height: 1.3;
+    }
+}
