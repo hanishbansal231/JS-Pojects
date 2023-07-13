@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.batteryHeading{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.battery{
+    position: relative;
+    height: 7.8em;
+    width: 17.5em;
+    border: .5em solid #246aed;
+    border-radius: 0.6em;
+    box-sizing: content-box;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+.battery::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1.6em;
+    margin: auto;
+    width: 1.1em;
+    height: 5em;
+    background: #246aed;
+    border-radius: 0 0.3em 0.3em 0;
+}
+.charge{
+    position: absolute;
+    top: 0.6em;
+    left: 0.6em;
+    width: 16.25em;
+    height: 6.5em;
+    background: #246aed;
+}
+.charge-level{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 900;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
