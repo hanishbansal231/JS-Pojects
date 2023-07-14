@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <input type="password" name="password" id="password" placeholder="Create Password" />
+            <div class="icon"><ion-icon name="eye-outline"></ion-icon></div>
+            <h1 class="heading">Password Should be</h1>
+            <ul class="lists">
+                <li class="list">
+                    <div class="list-icon"><ion-icon name="close"></ion-icon></div>
+                    <p>At least 8 characters long</p>
+                </li>
+                <li class="list">
+                    <div class="list-icon"><ion-icon name="close"></ion-icon></div>
+                    <p>At least 1 number (0...9)</p>
+                </li>
+                <li class="list">
+                    <div class="list-icon"><ion-icon name="close"></ion-icon></div>
+                    <p>At least 1 lowercase letter (a...z)</p>
+                </li>
+                <li class="list">
+                    <div class="list-icon"><ion-icon name="close"></ion-icon></div>
+                    <p>At least 1 special symbol (!...$)</p>
+                </li>
+                <li class="list">
+                    <div class="list-icon"><ion-icon name="close"></ion-icon></div>
+                    <p>At least 1 uppercase letter (A...Z)</p>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
