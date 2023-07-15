@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .5 ease;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    text-align: center;
+}
+.progress-container{
+    position: relative;
+    min-width: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.progress-container::before{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #ccc;
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+}
+.progress{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 6px;
+    width: 0;
+    background: red;
+    border-radius: 10px;
+    transition: all .5s liner;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid #ccc;
+    background: #fff;
+    z-index: 1;
+    transition: all .5s liner;
+}
+.circle.active{
+    border-color: red;
+}
+.btn{
+    display: inline-block;
+    height: 5rem;
+    width: 15rem;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
