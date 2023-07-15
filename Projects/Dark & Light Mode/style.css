@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --bg-color: #fff;
+    --text-color: #555;
+    --text-color-dark: #e5e5e5;
+    --bg-black: #15181f;
+    --shadow-light: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    --shadow-dark: 2px 2px 20px rgba(255, 255, 255,1);
+}
+body{
+    background: var(--bg-color);
+}
+body.dark{
+    background: var(--bg-black);
+}
+.wrapper{
+    box-shadow: var(--shadow-light);
+    height: 10rem;
+    width: 100%;
+}
+body.dark .wrapper{
+    box-shadow: var(--shadow-dark);   
+}
+.modeButton{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    background: #fff;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: transparent;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: left .5s linear;
+}
+label::before{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: left .5s linear;
+}
+body.dark label::before{
+    background: var(--bg-black);
+}
+label.active::before{
+    left: 50px;
+}
+input{
+    appearance: none;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+.container p{
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+    color: var(--text-color);
+}
+body.dark .container p{
+    color: var(--text-color-dark);
+}
