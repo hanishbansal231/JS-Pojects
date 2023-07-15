@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    background: #f1f1f1;
+    transition: all .7s linear;
+}
+.container{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    width: 80vw;
+    max-width: 50em;
+}
+.container h1{
+    font-size: 3rem;
+}
+.container h2{
+    font-size: 2rem;
+}
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+.box{
+    height: 10rem;
+    width: 20rem;
+    background: red; 
+    border: .2rem solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#grey{
+    background: #808080;
+}
+#white{
+    background: #ffffff;
+}
+#blue{
+    background: #0000ff;
+}
+#yellow{
+    background: #ffff00;
+}
+
+@media (max-width: 500px) {
+    .container{      
+        width: 90vw;
+    }
+    .box{
+        height: 8rem;
+        width: 15rem;
+    }
+    .container h1{
+        font-size: 2.5rem;
+    }
+    .container h2{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 400px) {
+    .container{      
+        width: 92vw;
+    }
+    .box{
+        height: 7rem;
+        width: 13rem;
+    }
+    .container h1{
+        font-size: 2rem;
+    }
+    .container h2{
+        font-size: 1.2rem;
+    }
+}
+
