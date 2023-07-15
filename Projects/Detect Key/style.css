@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+}
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: #555;
+    height: 60px;
+    width: 200px;
+    letter-spacing: .1rem;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.container.active .box{
+    display: none;
+}
+.detectBox{
+    position: relative;
+    width: 80vw;
+    padding: 3rem;
+    max-width: 40em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.container.active .detectBox{
+    display: flex;
+}
+.codeBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    font-weight: bolder;
+    border: .5rem solid #deb887;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 10px;
+    color: #deb887;
+}
+.keyName{
+    font-size: 5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #deb887;
+}
+.keyCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    color: #555;
+}
+.key{
+    width: 55%;
+    border-right: 2px solid #ccc;
+}
