@@ -55,7 +55,7 @@ body{
     font-size: .8rem;
     margin-top: .5rem;
     color: #ff0000;
-    /* display: none; */
+    display: none;
     font-family: 'Times New Roman', Times, serif;
 }
 .form.active .box input{
